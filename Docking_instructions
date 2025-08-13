@@ -1,0 +1,12 @@
+shuud autodock4, autogrid, pantool, pymol ashiglahdaa bi Virtual machine dr hurtel ajilluulj uzseen. (VM -ii maani ARM uname ni aarch64 bsn tul MGLTOOLS iin MOLKIT exec error ugch bsn)
+
+Alternatives to autodock, autogrid, MGLTools:
+https://biopython.org/docs/1.75/api/Bio.PDB.html
+https://www.rdkit.org/docs/api-docs.html
+
+Anhaarah zuils:
+python 3.11, <numpy 2.0 buyu umnuh zagvaruudiig supportldog module uud bsn. Odoo baigaa versionuudaa downgrade esvel upgrade hiine. 
+tul:
+  brew install python@3.11 /sudo apt bre-iin orond/
+  pip install "numpy<2.0"
+
