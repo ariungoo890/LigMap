@@ -1,4 +1,3 @@
-# LigMap
 IT automation with python challenge team LigMap 
 # PhytoDock 
 This git repo contains code for IT automation with python- challenge team LigMap's Admet-AI prediction.
