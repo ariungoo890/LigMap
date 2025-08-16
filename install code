@@ -4,7 +4,7 @@ import shutil
 import sys
 ##install openbabel and mopac
 def run_command(command, error_message):
-    print(f"📦 Running: {command}")
+    print(f"Running: {command}")
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
     if result.returncode != 0:
         print(f"{error_message}")
