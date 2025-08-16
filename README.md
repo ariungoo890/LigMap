@@ -1,5 +1,4 @@
-# LigMap 
-# PhytoDock 
+# LigMap # PhytoDock 
 This git repo contains code for IT automation with python- challenge team LigMap's Admet-AI prediction.
 admet_v2.py is run script with sample SMILES.
 
