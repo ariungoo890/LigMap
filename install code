@@ -1,0 +1,47 @@
+import os
+import subprocess
+import shutil
+import sys
+##install openbabel and mopac
+def run_command(command, error_message):
+    print(f"📦 Running: {command}")
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"{error_message}")
+        print(result.stderr)
+        exit(1)
+    return result.stdout
+
+def is_installed(command_name):
+    return shutil.which(command_name) is not None
+
+def install_openbabel():
+    print("Checking Open Babel installation...")
+    if not is_installed("obabel"):
+        print("Installing Open Babel...")
+        run_command("sudo apt-get update && sudo apt-get install -y openbabel", "Failed to install Open Babel.")
+        print("Open Babel is installed.")
+    else:
+        print("Open Babel is already installed.")
+
+def check_mopac():
+    print("Checking MOPAC installation...")
+    if not is_installed("mopac"):
+        print("""
+MOPAC is not installed.
+
+Manual installation required:
+1. Go to: https://openmopac.net/downloads.html
+2. Download the appropriate version
+3. Extract the files and move the 'MOPAC' binary to /usr/local/bin or a directory in your PATH.
+
+Instuction:
+$ tar -xvf MOPAC202X_Linux.tar.gz
+$ sudo mv MOPAC2016.exe /usr/local/bin/mopac
+$ sudo chmod +x /usr/local/bin/mopac
+
+Then re-run this script.
+""")
+        exit(1)
+    else:
+        print("MOPAC is installed.")
