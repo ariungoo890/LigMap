@@ -1,14 +1,12 @@
 # PhytoDock 
 IT automation with python challenge team LigMap.
+This git repo contains code for PhytoDock pipeline Admet-AI prediction.
 
-This git repo contains code for IT automation with python- challenge team LigMap's Admet-AI prediction.
-admet_v2.py is run script with sample SMILES.
+1. Instillation
+   Run the Install.sh script which will install admet-ai env as a package to your computer. Script would automatically open new environment under the default name admet-ai.
 
-To run admet_v2.py succesfully, install ADMET-AI package and prepare the environment. 
-Package works with Python 3.10 or python 3.11 version. 
+2. Running Script on Python
+   Activate your environment with conda activate admet-ai. This would change the env from base to admet-ai. Run the script with python command from your terminal.
 
-After installing the package, open the "requirement.txt" and add torch==2.5.0  
-Do Not Forget to "REINSTALL" the updated version. 
-
-pip install -r requirements.txt
-pip install -e .
+3. Data processing script
+   This script will extract 5 main properties from the results of admet prediction and give you visual chart.
