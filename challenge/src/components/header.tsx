@@ -39,7 +39,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/" className="group flex items-center hover:text-white transition">
+            <Link href="/download" className="group flex items-center hover:text-white transition">
               <i className="fa-solid fa-download mr-2"></i>
               Download
               <span className="block h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
